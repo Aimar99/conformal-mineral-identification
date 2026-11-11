@@ -9,7 +9,7 @@ __pycache__/
 
 # Raw and processed datasets
 data/raw/
-data/manifests/
+data/processed/
 
 # Report data
 reports/
