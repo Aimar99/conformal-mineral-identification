@@ -9,7 +9,10 @@ __pycache__/
 
 # Raw and processed datasets
 data/raw/
-data/processed/
+data/manifests/
+
+# Report data
+reports/
 
 # System files
 .DS_Store
@@ -17,3 +20,5 @@ Thumbs.db
 
 # Temporary files
 *.log
+
+*.egg-info/
