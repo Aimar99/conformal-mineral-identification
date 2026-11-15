@@ -1,24 +1,31 @@
-# Python environments
+# Python environments and caches
 .venv/
 venv/
 __pycache__/
 *.py[cod]
+*.egg-info/
 
 # Jupyter
 .ipynb_checkpoints/
 
-# Raw and processed datasets
+# RRUFF data and generated feature arrays (do not redistribute raw data)
 data/raw/
 data/processed/
 
-# Report data
-reports/
+# Ignore generated reports by default, but retain selected figures and CSV summaries
+reports/*
+!reports/figures/
+!reports/figures/**
+!reports/*.csv
 
-# System files
+# Model and checkpoint files
+*.joblib
+*.pkl
+*.npz
+*.h5
+*.keras
+
+# System files and logs
 .DS_Store
 Thumbs.db
-
-# Temporary files
 *.log
-
-*.egg-info/
